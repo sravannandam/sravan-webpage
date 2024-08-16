@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+    <style>
+        .s_navbar{
+            background-color: rgba(23,35,66,255);
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 8px;
+            font-size: small;
+        }
+        .s_navbar a{
+            color: white;
+            margin-left: 6px;
+        }
+        .navbar {
+            display:flex;
+            justify-content: space-evenly;
+            margin: 30px;
+            padding: 6px;
+            
+         
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: black;
+            font-weight:lighter;
+        }
+        .navbar a.country{
+            font-size: small;
+    
+        }
+   
+         .navbar a .logo{
+            width: 150px;
+            height: auto;
+            display:block;
+            
+         }
+        .navbar a .cart{
+            display: flex;
+            size: 10px;
+            width: 20px;
+         }
+         .navbar .zero{
+            margin: 0px;
+         }
+         .navbar .fa-user{
+            border-radius: 50%;
+            
+         }
+         .container{
+            text-align: center;
+            background-color: rgba(23,35,66,255);
+            padding: 60px;
+            color: white;
+            font-family: sans-serif;
+            
+         }
+         .container .h1{
+            font-size: 17px;
+            font-style: normal;
+            
+        }
+         .container a{
+            color: white;
+            padding: 7px;
+            font-size:large;
+            
+         }
+         .img{
+            margin: 0px,0px 0px 0px;
+            size: 100%;
+            width: 100%;
+         }
+         
+         .b BUtton .BUtton{
+            width: 20%;
+            padding: 30px;
+            font-family: sans-serif;
+            font-size: small;
+            font-weight: bolder;
+            color:rgba(23,35,66,255) ;
+            background: white;
+            text-align: center;
+            text-decoration: none;
+         }
+          .b{
+            position: relative;
+            margin: 0px;
+          }
+          .b  a{
+            position: absolute;
+            top: 50%;
+            right: 45%;
+            margin: 0px;
+            text-align:center;
+            padding: 10px;
+            color: white;
+            font-size: small;
+            text-decoration: none;
+            font-family:sans-serif;
+            font-weight:bolder;
+          }
+          .sellers{
+            text-align: center;
+            font-weight:bolder;
+            margin: 50px;
+            font-family:Arial, Helvetica, sans-serif;
+            padding: 3px;
+            font-size: smaller;
+          }
+          .images{
+            display:flex;
+            /* flex-wrap: wrap; */
+            
+            width:100%;
+            height: 350px;
+            justify-content:space-between;
+            margin: 5px;
+            padding:0px;
+            
+            
+          }
+          /* .images .size{
+            height: fit-content;
+          }
+           */
+           .details{
+            display: flex;
+            font-size: 1.8vh;
+            justify-content: space-between;
+            font-family: sans-serif;
+            text-align: center;
+            font-weight: lighter;
+            
+           }
+           .details .para1{
+            margin-left: 13px;
+            text-align: center;
+           }
+           .details .para2{
+            text-align: center;
+            margin: 10px;
+           }
+           .details .para3{
+            text-align: center;
+            margin-left: 10px;
+            
+           }
+           .details .para4{
+            text-align: center;
+            margin-left: 10px;
+           }
+           .images{
+            position: relative;
+           }
+           .images .button{
+            position: absolute;
+            width:10%;
+            margin:150px 50px;
+            padding: 15px 15px;
+            background:rgba(23,35,66,255);
+            
+           }
+           .images .button a{
+            text-decoration: none;
+            color: white;
+           }
+           .images{
+            position: relative;
+           }
+           .images .button2{
+            position: absolute;
+            width:10%;
+            margin:150px 50px;
+            padding: 15px 15px;
+            background:rgba(23,35,66,255);
+
+           }
+           .images .button2 a{
+            text-decoration: none;
+            color: white;
+           }
+           .images{
+            position: relative;
+           }
+           .images .button3{
+            position: absolute;
+            width:10%;
+            margin:150px 50px;
+            padding: 15px 15px;
+            background:rgba(23,35,66,255);
+            
+           }
+           .images .button3 a{
+            text-decoration: none;
+            color: white;
+           }
+          
+           .images{
+            position: relative;
+           }
+           .images .button4{
+            position: absolute;
+            width:10%;
+            margin:150px 50px;
+            padding: 15px 15px;
+            background:rgba(23,35,66,255);
+            
+           }
+           .images .button4 a{
+            text-decoration: none;
+            color: white;
+           }
+           .popular{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: medium;
+            font-weight: bold;
+            margin: 30px;
+            padding-top: 5px;
+            width: auto;
+            color:rgba(23,35,66,255) ;
+           }
+           .women{
+            display: flex;
+            width:100%;
+            height: 350px;
+            justify-content:space-between;
+            margin: 5px;
+            padding:0px;
+           }
+           .a{
+            display: flex;
+            font-family: sans-serif;
+            font-size: 1.8vh;
+            font-weight: lighter;
+            text-align: center;
+            justify-content: space-between;
+            margin: 8px;
+            padding: 1px;
+            }
+            .div{
+                display: flex;
+                justify-content:space-between ;
+                width: 100%;
+                height: 300px;
+                margin: 10px;
+            }     
+            .div2{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height:300px ;
+                
+            }      
+            .loadmore{
+                text-align: center;
+                margin: 2%;
+                
+                padding: 20px;
+            }
+            .loadmore .load{
+                width:150px;
+                padding: 10px;
+                background:rgba(23,35,66,255) ;
+            }
+            .loadmore .load a{
+                color: white;
+                text-decoration: none;
+            }
+            .offers{
+                text-align: center;
+                font-family: sans-serif;
+                font-weight: bold;
+                color:rgba(23,35,66,255) ;
+
+            }
+            .radio{
+                text-align: center;
+                font-family: sans-serif;
+                width: auto;
+                font-weight: bold;
+                color:rgba(23,35,66,255) ;
+                justify-content: space-between;
+                margin-left: 20px;
+                
+            }
+            .radio p .email{
+                padding: 15px;
+                width: 350px;
+                font-size: medium;
+                
+            }
+            .radio p .btn{
+                padding: 15px;
+                width: 150px;
+                background: white;
+                color:rgba(23,35,66,255) ;
+                font-size: small;
+                font-weight: bolder;
+                border-color:rgba(23,35,66,255) ;
+                
+
+            }
+            .one{
+                background: rgba(177,188,209,255);
+                width: 100%px;
+                height: 100%;
+                padding-top: 45px;
+                padding-bottom: 45px;
+                margin: 0px;
+            }
+           .footer{
+            position: relative;
+            display: flex;
+            background:rgba(23,35,66,255) ;
+            color: white;
+            text-align:left;
+            justify-content: space-between;
+            font-family: sans-serif;
+            font-size: 1.8vh;
+            font-weight:400vh;
+            padding: 150px;
+            
+            
+           }
+           .footer .terms{
+            position: absolute;
+            text-align: bottom;
+            margin:280px;
+            text-align: left;
+            margin-inline-start: 5px;
+            padding:5px;
+            width: 80%;
+            font-weight: lighter;
+         }
+            .footer{
+                position: relative;
+            }
+            .footer .site{
+                position:absolute;
+                margin: 280px 15px 15px 700px;
+                font-size:2.5vh;
+
+            }
+            .footer .site .icon{
+                    justify-content: space-around;
+                    margin-left: 60px;
+
+
+
+            }
+            .footer .fa-facebook-f{
+                position: absolute;
+                justify-content: space-evenly;
+                margin-top: 280px;
+                margin-left: 60px;
+                color: white;
+                padding: 25px;
+                
+ }
+             .footer .fa-tiktok{
+                position: absolute;
+                justify-content: space-evenly;
+                margin-top: 280px;
+                margin-left: 30px;
+                color: white;
+                padding: 25px;
+             }
+
+             .footer .fa-instagram{
+                position: absolute;
+                justify-content: space-evenly;
+                margin-top: 280PX;
+                margin-right: 150px;
+                color: white;
+                padding: 25px;
+             }
+            
+
+
+
+          
+            
+          
+          
+             
+           
+
+         
+
+
+        
+    </style>
+</head>
+<body>
+    <nav class="s_navbar">
+        summer clearence sale- upto 70% off <a href=""> shop now</a>
+    </nav>
+    <nav class="navbar">
+        
+            <a href=""> men</a>
+            <a href="">women</a>
+            <a href="">jeans</a>
+            <a href="">Fit Guide </a>
+            <a href="">sale</a>
+                <a href="">
+                    <img class="logo"  src="https://www.buffalojeans.com/cdn/shop/files/BUFFALOJEANS_logo_medium.jpg?v=1672760368" alt=""></a>
+               
+                    <a href=""> <img src="" alt=""></a>
+                
+                <a class="country" href=""> <span>US/EN</span></a>
+                <a href=""></a>
+                <a href="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href=""> <i class="fa-solid fa-dollar-sign"></i></a>
+                <a href="">
+                    <span><img class="cart" src="https://www.buffalojeans.com/cdn/shop/t/491/assets/cart.png?v=165517935736489732381720619756"
+                     alt=""></span>
+                </a>
+    </nav> 
+    <div class="container">
+    <div class="h1">
+        <h1>SUMMAR CLEARANCE </h1>
+    </div>
+    <div><h1>UP TO 70% OFF SITEWIDE</h1></div>
+    <a href="">SHOP MEN</a>
+    <a href="">SHOP WOMEN</a>
+        </div>
+        <div class="b">
+            <a href="">SHOP NOW</a>
+            <img class="img" src="https://www.buffalojeans.com/cdn/shop/files/SUNDRESS_DESKTOP_EN_1400x.jpg?v=1720107764"
+             alt="">
+            <!-- <BUtton> <a class="BUtton" href="">SHOP NOW</a></BUtton> -->
+        </div>
+        <div class="sellers">
+            <h3>BEST SELLERS</h3>
+        </div>
+
+        <div class="images">
+            <img src="https://cdn.shopify.com/s/files/1/0504/3054/1978/files/BM22604-419_2_750x750.jpg?v=1694026221"
+             alt=""><button class="button"><a href="">ADD TO CART</a></button>
+             
+            <img src="https://cdn.shopify.com/s/files/1/0504/3054/1978/products/BM23834-464_750x750.jpg?v=1675870105"
+              alt=""><button class="button2"><a href="">ADD TO CART</a></button>
+             
+             <img src="https://cdn.shopify.com/s/files/1/0504/3054/1978/files/BM22968-Indigo_750x750.jpg?v=1705687736"
+              alt=""><button class="button3"><a href="">ADD TO CART</a></button>
+              
+             <img src="https://cdn.shopify.com/s/files/1/0504/3054/1978/files/BPMD00948E-19105_750x750.jpg?v=1693423945"
+              alt=""><button class="button4"><a href="">ADD TO CART</a></button>
+              
+        </div>
+        <div class="details">
+            <p class="para1">BLAELYNN WOMEN'S OPENWORK <br> SWEATER HALF-WHITE- SW0055P <br>
+            $29.50</p>
+            <P class="para2">SUPIMA COTTON TIPIMA BLUE <br>T-SHIRT-BM23834 <br>$11.99</P>
+            <P class="para3">SUPIMA COTTON TIPIMA ORANGE <br>T-SHIRT-BM23834 <br> $12.00</P>
+            <P class="para4">SLIM ASH MEN'S JEANS IN AUTHENTIC <br>AND SANDED BLUE - BM22604 <br>$59.40</P>
+            </div>
+            <div class="popular">
+                <p>MOST POPULAR RIGHT NOW</p>
+            </div>
+            <div class="women">
+                <img src="https://cdn.shopify.com/s/files/1/0504/3054/1978/files/BL15973-419_750x750.jpg?v=1705895059"
+                 alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0504/3054/1978/files/WT0104S-100_750x750.jpg?v=1712607901" 
+                alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0504/3054/1978/files/BL15883-315_750x750.jpg?v=1709243255" 
+                alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0504/3054/1978/files/BPM12633EL-19182_750x750.jpg?v=1693423711"
+                 alt="">
+            </div>
+            <div class="a">
+                <p>KICK CROP KIM WOMEN'S JEANS IN<br>VINTAGE BLUE - BL 15973 <br>$62.30</p>
+                <p>DOLLY WOMEN'S SHORT-SLEEVE TIE<br>FRONT CROP BLOUSE,WHITE-WT0104S <br>$33.00</p>
+                <p>HIGH RISE WIDE LEG ADELE WOMEN'S<br>PANTS IN OLIVE - BL15883 <br>$62.30</p>
+                <p>SLIM STRIGHT EVEN-X MEN'S JEANS<br>IN CLASSIC BLUE <br>$40.00</p>
+            </div>
+           <div class="div">
+            
+            <img src="https://cdn.showcasegalleries.io/media/instagram/public-showcase-media.sfo3.digitaloceanspaces.com/18038757613979415_thumb.jpg"
+            alt="">
+           <img src="https://cdn.showcasegalleries.io/media/instagram/public-showcase-media.sfo3.digitaloceanspaces.com/18023922299076194_thumb.jpg"
+            alt="">
+           <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18442348732042170-850w.jpg"
+            alt="">
+           <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18030575344961975-850w.jpg"
+            alt="">
+            <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18442348732042170-850w.jpg"
+             alt="">
+             <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18030575344961975-850w.jpg"
+              alt="">
+           </div>
+
+           <div class="div2">
+                <!-- <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18001799903426228-850w.jpg"
+                 alt=""> -->
+                <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18070858906528267-850w.jpg"
+                 alt="">
+                <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/17971664261742667-850w.jpg"
+                 alt="">
+                <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18136902997337706-850w.jpg"
+                 alt="">
+                <!-- <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18441925537006914-850w.jpg"
+                 alt="">
+                <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18008775404566904-850w.jpg"
+                 alt=""> -->
+                 <img src="https://cdn.showcasegalleries.io/media/instagram/showcase-optimized-images.sfo3.digitaloceanspaces.com/showcase-optimized-images.sfo3.digitaloceanspaces.com/18081774772485980-850w.jpg"
+                  alt="">
+                 <img src="https://cdn.showcasegalleries.io/media/instagram/public-showcase-media.sfo3.digitaloceanspaces.com/18033550310073220_thumb.jpg"
+                  alt="">
+                </div >
+                <div class=loadmore>
+                    <button class="load"><a href="">LOAD MORE</a></button>
+                </div>
+
+
+                <div class="one">
+                
+                <div class="offers">
+                    <h2>
+                        ENJOY 20% OFF YOUR FIRST PURCHASE
+                    </h2>
+                    <h3>sign up to get exclusive perks & benefits</h3>
+                    <h3>i wants updates for</h3>
+                   </div>
+                   <div class="radio">
+                    <input type="radio">MAN
+                    <input type="radio">WOMEN
+                    <input type="radio">BOTH
+                    <p ><input class="email" type="Email" name="Email" placeholder="Email"></p>
+                    <p ><input  class="btn" type="button" value="SUBSCRIBE"></p>
+                   </div>
+
+                </div>
+                
+                <div class="footer">
+
+              
+              
+              <div>
+                    <h4>CUSTOMER SERVICE</h4>
+                    <h5>Track Your Order</h5>
+                    <h5>Shipping & Returns</h5>
+                    <h5>Contact Us</h5>
+                    <h5>Account Information</h5>
+                    <h4>F.A.Q</h4>
+                </div>
+                <div>
+                    <h4>SHOPPING</h4>
+                    <h5>reviews</h5>
+                    <h5>Klama - Buy NOw,Pay Later</h5>
+                    <h5>Rewards</h5>
+                    <h5>Gift Cards</h5>
+                </div>
+                <div>
+                <h4>ABOUT</h4>
+                <h5>About Us</h5>
+                <h5>Affiliates</h5>
+                <h4>Sustainability</h5>
+                <h4>Careers</h5>
+                <h5>Brand Ambassador Program - Collabs</h5>
+                </div>
+
+                <div>
+                    <h4>LEGAL</h4>
+                    <h5>Promotion Details &Desclaimers</h5>
+                    <h5>Terms & Conditions</h5>
+                    <h5>Privacy Policy</h5>
+                    <h5>Accessibility</h5>
+                    <h5>Transparancy In Supply Chains Act.</h5>
+                </div>
+            
+                <div class="terms">
+                    <h5>2023 BUFFALO DAVID BITTON CENTRIC DENIM USA LLC, ALL RIGHTS RESERVED.</h5>
+                </div>
+              
+            <div class="site">
+                <h6>FOLLOW US@BUFFALOJEANS</h6>
+                
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com/buffalojeans" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@buffalojeans" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/buffalojeans/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+
+            </div>
+           
+            
+</body>
+</html>
